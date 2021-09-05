@@ -6,21 +6,6 @@ import XCTest
 import FeedStoreChallenge
 
 class FeedStoreIntegrationTests: XCTestCase {
-	//  ***********************
-	//
-	//  Implement these Integration Tests *after*
-	//  you're done with all the `FeedStoreChallengeTests`
-	//
-	//  Follow the TDD process:
-	//
-	//  1. Uncomment and run one test at a time (run tests with CMD+U).
-	//  2. Do the minimum to make the test pass and commit.
-	//  3. Refactor if needed and commit again.
-	//
-	//  Repeat this process until all tests are passing.
-	//
-	//  ***********************
-
 	override func setUpWithError() throws {
 		try super.setUpWithError()
 
@@ -34,9 +19,9 @@ class FeedStoreIntegrationTests: XCTestCase {
 	}
 
 	func test_retrieve_deliversEmptyOnEmptyCache() throws {
-//		let sut = try makeSUT()
-//
-//		expect(sut, toRetrieve: .empty)
+		let sut = try makeSUT()
+
+		expect(sut, toRetrieve: .empty)
 	}
 
 	func test_retrieve_deliversFeedInsertedOnAnotherInstance() throws {
