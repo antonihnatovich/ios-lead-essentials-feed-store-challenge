@@ -6,22 +6,10 @@ import XCTest
 import FeedStoreChallenge
 
 class FeedStoreChallengeTests: XCTestCase, FailableFeedStoreSpecs {
-	//  ***********************
-	//
-	//  Follow the TDD process:
-	//
-	//  1. Uncomment and run one test at a time (run tests with CMD+U).
-	//  2. Do the minimum to make the test pass and commit.
-	//  3. Refactor if needed and commit again.
-	//
-	//  Repeat this process until all tests are passing.
-	//
-	//  ***********************
-
 	func test_retrieve_deliversEmptyOnEmptyCache() throws {
-//		let sut = try makeSUT()
-//
-//		assertThatRetrieveDeliversEmptyOnEmptyCache(on: sut)
+		let sut = try makeSUT()
+
+		assertThatRetrieveDeliversEmptyOnEmptyCache(on: sut)
 	}
 
 	func test_retrieve_hasNoSideEffectsOnEmptyCache() throws {
