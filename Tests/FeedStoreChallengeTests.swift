@@ -81,7 +81,7 @@ class FeedStoreChallengeTests: XCTestCase, FailableFeedStoreSpecs {
 
 		let sut = try makeSUT()
 
-		assertThatInsertDeliversErrorOnInsertionError(on: sut)
+		assertThatInsertHasNoSideEffectsOnInsertionError(on: sut)
 	}
 
 	func test_delete_deliversNoErrorOnEmptyCache() throws {
